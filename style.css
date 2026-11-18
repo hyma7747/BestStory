@@ -1,0 +1,67 @@
+/* إعدادات عامة */
+body {
+    background-color: #fcfbfb;
+    color: #333;
+    font-family: 'Cairo', Tahoma, sans-serif;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+}
+
+.story-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* صندوق القصة الأولى (البينك) */
+.pink-story {
+    background-color: #fdf2f6; /* خلفية بينك فاتحة وناعمة */
+    border: 2px solid #f48fb1; /* إطار بينكي رومانسي */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(244, 143, 177, 0.15);
+}
+
+.pink-story h2 {
+    color: #880e4f; /* لون خط بينك غامق وواضح للقراءة */
+}
+
+/* صندوق القصة الثانية (الأخضر) */
+.green-story {
+    background-color: #f1f8f5; /* خلفية خضراء هادئة ومريحة للعين */
+    border: 2px solid #a3e4d7; /* إطار أخضر هادئ */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(163, 228, 215, 0.15);
+}
+
+.green-story h2 {
+    color: #145a32; /* لون خط أخضر غامق وواضح للقراءة */
+}
+
+/* تنسيق عام للعناوين داخل القصص عشان تكون نازلة تحت بعض بشكل مريح */
+.story-box h2 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* للتأكد من وضوح الخط على شاشات الهواتف المحمولة الصغيرة */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .story-box {
+        padding: 12px;
+    }
+    
+    .story-box h2 {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+}
